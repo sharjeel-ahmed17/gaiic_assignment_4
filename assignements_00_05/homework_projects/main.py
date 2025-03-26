@@ -117,6 +117,44 @@ def tiny_mad_lib():
     noun = input("Please type a noun and press enter.  ")
     verb = input("Please type a verb and press enter. ")
     print(f"Code in Place is fun. I learned to program and used Python to make my {adj} {noun} {verb}!")
+# ==================== 02_lists ===========================
+# ==================== Qustion 1 ===========================
+
+
+def add_tomany_number (numbers):
+    total_so_far = 0
+
+
+    for number in numbers:
+        total_so_far += number
+    return total_so_far
+
+def add_number ():
+    my_number_list = [1, 2, 3, 4, 5]
+    sum = add_tomany_number(my_number_list)
+    print(f"sum of all numbers : {sum}")
+# ==================== Question 2 ===========================
+def double_each_element():
+    numbers = [1, 2, 3, 4, 5]
+
+    for i in range(len(numbers)):
+        elem_at_ind = numbers[i]
+        numbers[i] = elem_at_ind * 2 
+    
+    print(numbers)
+
+
+
+
+# ==================== Question 3 ===========================
+
+# from graphics import Canvas
+# skipped
+# ==================== Question 4 ===========================
+# ==================== Question 5 ===========================
+# ==================== Question 6 ===========================
+# ==================== Question 7 ===========================
+# ==================== Question 8 ===========================
 
 
 def main():
@@ -134,8 +172,11 @@ def main():
     # feet_to_inches()
     # perpendicular_sides()
     # remainder()
+    # done with question no 1
     # tiny_mad_lib()
-
+    # ====== 02_lists =====
+    # add_number()
+    # double_each_element()
 
 if __name__ == "__main__":
     main()
