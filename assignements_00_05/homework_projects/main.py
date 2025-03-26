@@ -52,17 +52,89 @@ def convert_to_squre ():
     square = int(input("enter your number: "))
     final_res = square * square
     print(final_res)
-# ==================== Question 3 ================================
-# ==================== Question 3 ================================
+# ==================== Completed ================================
+
+
+# ==================== 01_expressions ===========================
+# ==================== Question 1 ===========================
+import random
+NUM_SIDES = 6
+def roll_dice ():
+    die1 = random.randint(1, NUM_SIDES)
+    die2 = random.randint(1, NUM_SIDES)
+    total: int = die1 + die2
+    print("Total of two dice:", total)
+def rolling_dice_3 ():
+    die1: int = 10
+    print("die1 in main() starts as: " + str(die1))
+    roll_dice()
+    roll_dice()
+    roll_dice()
+    print("die1 in main() is: " + str(die1))
+
+# ==================== Question 2 ===========================
+
+def mass_calutor ():
+    C = 299792458
+    mass = float(input("Enter kilos of mass: "))
+    e = mass * (C**2)
+    print(f"{e}  joules of energy!")
+# ==================== Question 3 ===========================
+
+
+def feet_to_inches ():
+    INCHES_IN_FOOT = 12
+
+    feet = int(input("enter feet to convert inches : "))
+    res = feet * INCHES_IN_FOOT
+    print(res)
+# ==================== Question 4 ===========================
+
+def perpendicular_sides():
+    import math
+    ab = float(input("Enter the length of AB:  "))
+    ac = float(input("Enter the length of AC:  "))
+
+    bc = math.sqrt(ab**2 + ac **2)
+    print(f"The length of BC (the hypotenuse) is: {bc}")
+
+# ==================== Question 5 ===========================
+
+def remainder ():
+    num_1 = int(input("Please enter an integer to be divided: "))
+    num_2 = int(input("Please enter an integer to be divided: "))
+    res = num_1 % num_2
+    print(f"The result of this division is {num_2} with a remainder of {res}")
+
+# ==================== Question 6 ===========================
+
+# aready done with question no 1
+
+# ==================== Question 7 ===========================
+
+def tiny_mad_lib():
+    adj = input("Please type an adjective and press enter. ")
+    noun = input("Please type a noun and press enter.  ")
+    verb = input("Please type a verb and press enter. ")
+    print(f"Code in Place is fun. I learned to program and used Python to make my {adj} {noun} {verb}!")
+
 
 def main():
     pass
+    # ==== 00_intro_python =====
     # calculator()
     # funnny_game()
     # convert_fah_to_cel()
     # age_riddle_solve()
     # triangle_calculation()
     # convert_to_squre()
+    # ==== 01_expression =====
+    # rolling_dice_3()
+    # mass_calutor()
+    # feet_to_inches()
+    # perpendicular_sides()
+    # remainder()
+    # tiny_mad_lib()
 
 
 if __name__ == "__main__":
