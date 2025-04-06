@@ -151,11 +151,104 @@ def double_each_element():
 # from graphics import Canvas
 # skipped
 # ==================== Question 4 ===========================
+
+def add_three_copies(my_list, data):
+    for i in range(3):
+        my_list.append(data)
+
+def fun_gaming_program():
+    # add_three_copies()
+    message = input("Enter a message to copy: ")
+    my_list = []
+    print("List before:", my_list)
+    add_three_copies(my_list, message)
+    print("List after:", my_list)
+# fun_gaming_program()
 # ==================== Question 5 ===========================
+
+# def get_first_element(lst):
+#     """
+#     Prints the first element of a provided list.
+#     """
+
+#     print(lst[0])
+
+# # There is no need to edit code beyond this point
+
+# def get_lst():
+#     """
+#     Prompts the user to enter one element of the list at a time and returns the resulting list.
+#     """
+#     lst = []
+#     elem: str = input("Please enter an element of the list or press enter to stop. ")
+#     while elem != "":
+#         lst.append(elem)
+#         elem = input("Please enter an element of the list or press enter to stop. ")
+#     return lst
+
+# def get_ele():
+#     lst = get_lst()
+#     get_first_element(lst)
+# get_ele()
 # ==================== Question 6 ===========================
+def get_last_element(lst):
+    """
+    Prints the first element of a provided list.
+    """
+
+    print(lst[-1])
+
+# There is no need to edit code beyond this point
+
+def get_lst():
+    """
+    Prompts the user to enter one element of the list at a time and returns the resulting list.
+    """
+    lst = []
+    elem: str = input("Please enter an element of the list or press enter to stop. ")
+    while elem != "":
+        lst.append(elem)
+        elem = input("Please enter an element of the list or press enter to stop. ")
+    return lst
+
+def get_ele():
+    lst = get_lst()
+    get_last_element(lst)
+# get_ele()
 # ==================== Question 7 ===========================
+
+def get_all_number_list ():
+    lst = []  # Make an empty list to store things in
+
+    val = input("Enter a value: ")  # Get an initial value
+    while val:  # While the user input isn't an empty value
+        lst.append(val) # Add val to list
+        val = input("Enter a value: ")  # Get the next value to add
+
+    print("Here's the list:", lst)
+# get_all_number_list()
 # ==================== Question 8 ===========================
 
+
+
+MAX_LENGTH : int = 3
+
+def shorten(lst):
+     while len(lst) > MAX_LENGTH:
+        last_elem = lst.pop()
+        print(last_elem)
+# def main_function ():
+def get_list ():
+    lst = []
+    elem = input("Please enter an element of the list or press enter to stop. ")
+    while elem != "":
+        lst.append(elem)
+        elem = input("Please enter an element of the list or press enter to stop. ")
+    return lst
+def main_fun ():
+    lst = get_lst()
+    shorten(lst)
+main_fun()
 
 def main():
     pass
